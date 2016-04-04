@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/indicator_arrow" />
+
+        <ProgressBar
+            android:id="@+id/pb_rotate"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/indetermiate_rotate"
+            android:indeterminateDuration="1000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginLeft="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="5dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginBottom="10dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后刷新 2015-01-01"
+            android:textColor="#66000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>
